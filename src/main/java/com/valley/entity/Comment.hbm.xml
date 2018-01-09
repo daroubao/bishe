@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.valley.entity.Comment" table="comment">
+		<id name="id" column="Id">
+			<generator class="native" />
+		</id>
+		<property name="commentID" column="CommentID" />
+		<property name="comUserID" column="ComUserID" />
+		<property name="comName" column="ComName" />
+		<property name="comDesc" column="ComDesc" />
+		<property name="comTime" column="ComTime" />
+		<property name="comDiaryID" column="ComDiaryID" />
+		
+	</class>
+</hibernate-mapping>

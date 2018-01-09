@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.valley.entity.User" table="user">
+		<id name="id" column="Id">
+			<generator class="native" />
+		</id>
+		<property name="userID" column="UserID" />
+		<property name="userName" column="UserName" />
+		<property name="password" column="Password" />
+		<property name="score" column="Score" />
+		<property name="descr" column="Descr" />
+		<property name="place" column="Place" />
+		<property name="birthday" column="Birthday" />
+		<property name="boundUserID" column="BoundUserID" />
+		<property name="sex" column="Sex" />
+		<property name="picUrl" column="PicUrl" />
+	</class>
+</hibernate-mapping>

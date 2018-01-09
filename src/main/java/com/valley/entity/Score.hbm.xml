@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.valley.entity.Score" table="score">
+		<id name="id" column="Id">
+			<generator class="native" />
+		</id>
+		<property name="scoreID" column="ScoreID" />
+		<property name="scoInf" column="ScoInf" />
+		<property name="scoCom" column="ScoCom" />
+		<property name="scoSup" column="ScoSup" />
+		<property name="scoPic" column="ScoPic" />
+		<property name="scoCare" column="ScoCare" />
+		<property name="score" column="Score" />
+		<property name="scoUserID" column="ScoUserID" />
+		<property name="scoUsed" column="ScoUsed" />
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.valley.entity.Diary" table="diary">
+		<id name="id" column="Id">
+			<generator class="native" />
+		</id>
+		<property name="diaryID" column="DiaryID" />
+		<property name="dateline" column="Dateline" />
+		<property name="diaUserID" column="DiaUserID" />
+		<property name="support" column="Support" />
+		<property name="rights" column="Rights" />
+		<property name="title" column="Title" />
+		<property name="body" column="Body" />
+		<property name="stage" column="Stage" />
+		<property name="picUrl" column="PicUrl" />
+		<property name="userName" column="UserName" />
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.valley.entity.Picture" table="picture">
+		<id name="id" column="Id">
+			<generator class="native" />
+		</id>
+		<property name="picID" column="PicID" />
+		<property name="picGroID" column="PicGroID" />
+		<property name="picNa" column="PicNa" />
+		<property name="picUrl" column="PicUrl" />
+		<property name="picUserID" column="PicUserID" />
+		<property name="picBouUserID" column="PicBouUserID" />
+	</class>
+</hibernate-mapping>
